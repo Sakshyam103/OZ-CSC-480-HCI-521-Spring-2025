@@ -72,7 +72,7 @@ public class AuthResource{
         //need to fix here
         String jwt = JwtService.buildJwt(payload.getEmail());
 //        HttpServletRequest request = SessionUtils.getRequest();
-        String remoteUser = request.getRemoteUser();
+//        String remoteUser = request.getRemoteUser();
 //        Set<String> roles = getRoles(request);
         HttpSession session = request.getSession();
         session.setAttribute("quotableToken", jwt);
